@@ -6,16 +6,18 @@ import 'package:stacked/stacked.dart';
 class HomeViewModel extends BaseViewModel {
   // final FirebaseauthService _firebaseauthService =
   //     locator<FirebaseauthService>();
-  bool _hidepassword = true;
+  bool _hidePasswordValue = true;
 
-  bool get hidepassword => _hidepassword;
-  void togglepassword() {
-    _hidepassword = !_hidepassword;
+  bool get hidePassword => _hidePasswordValue;
+
+  void togglePasswordValue() {
+    _hidePasswordValue = !_hidePasswordValue;
     notifyListeners();
   }
 
-  // Future signup(String username, String email, String password) async {
-  // await _firebaseauthService.signUpWithEmailAndPassword(
-  //     username, email, password);
+  // Future signUp({String email, String password, String name}) async {
+  //   // setBusy(true);
+  //   final result = await _firebaseauthService.signUpWithEmail(
+  //       email: email, password: password, username: name);
   // }
 }

@@ -44,22 +44,21 @@ class HomeView extends StatelessWidget {
               ),
               Card(
                 child: TextField(
-                  controller: _passwordcontroller,
-                  // onEditingComplete: () => model.signup(
-                  //     _usernamecontroller.text,
-                  //     _emailcontroller.text,
-                  //     _passwordcontroller.text),
-                  decoration: InputDecoration(
+                    controller: _passwordcontroller,
+                    // onEditingComplete: () => model.signup(
+                    //     _usernamecontroller.text,
+                    //     _emailcontroller.text,
+                    //     _passwordcontroller.text),
+                    decoration: InputDecoration(
                       border: InputBorder.none,
                       focusedBorder: InputBorder.none,
                       prefixIcon: Icon(Icons.vpn_key),
-                      suffixIcon: IconButton(
-                        onPressed: () => model.togglepassword(),
-                        icon: Icon(model.hidepassword
-                            ? Icons.enhanced_encryption
-                            : Icons.remove_red_eye),
-                      )),
-                ),
+                      // suffixIcon: IconButton(
+                      //   onPressed: () => model.togglepassword(),
+                      //   icon: Icon(model.hidepassword
+                      //       ? Icons.enhanced_encryption
+                      //       : Icons.remove_red_eye),
+                    )),
               ),
               RaisedButton(
                 onPressed: () => null,

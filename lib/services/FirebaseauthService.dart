@@ -11,8 +11,8 @@ class FirebaseauthService {
 
   UserModel get currentUser => _currentUser;
 
-  Future signUpWithEmailAndPassword(
-      String username, String email, String password) async {
+  Future signUpWithEmail(
+      {String username, String email, String password}) async {
     var authResult = await _auth.signInWithEmailAndPassword(
         email: email, password: password);
 
